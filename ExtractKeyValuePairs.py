@@ -1,5 +1,6 @@
 ########### Python Form Recognizer Analyze #############
 from requests import post as http_post
+import json
 
 # Endpoint URL
 base_url = r"https://formrecognizersimen.cognitiveservices.azure.com/" + "/formrecognizer/v1.0-preview/custom"
@@ -17,6 +18,11 @@ try:
         data_bytes = f.read()  
     resp = http_post(url = url, data = data_bytes, headers = headers)
     print("Response status code: %d" % resp.status_code)    
-    print("Response body:\n%s" % resp.json())   
+    print("Response body:\n%s" % resp.json())
+  
+  #writing the results to a json file
+    with open('C:/Users/simen.aakhus/Documents/GitHub/FormRecognizer/Results/Response.json', 'w') as json_file:
+        json.dump(resp.json(), json_file)
+
 except Exception as e:
     print(str(e))
