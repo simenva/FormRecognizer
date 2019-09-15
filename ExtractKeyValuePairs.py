@@ -4,7 +4,8 @@ import json
 
 # Endpoint URL
 base_url = r"https://formrecognizersimen.cognitiveservices.azure.com/" + "/formrecognizer/v1.0-preview/custom"
-file_path = r"C:\Temp\FormRecognizer\Taxi 561 26-10-2017.jpg"
+#file_path = r"C:\Temp\FormRecognizer\Taxi 561 26-10-2017.jpg"
+file_path = r'C:/Temp/FormRecognizer/Taxi 561 26-10-2017.jpg'
 model_id = "a3d57c4e-b813-4abc-ad06-f8608b56ec73"
 headers = {
     # Request headers

@@ -3,7 +3,7 @@ from requests import post as http_post
 
 # Endpoint URL
 base_url = r"https://formrecognizersimen.cognitiveservices.azure.com/" + "/formrecognizer/v1.0-preview/custom"
-source = r"https://simenstorageaccount.blob.core.windows.net/taxireceipts?st=2019-09-13T13%3A44%3A43Z&se=2019-09-14T13%3A44%3A43Z&sp=rl&sv=2018-03-28&sr=c&sig=YwvbR2mA8T1omewRf924uAEYf9%2Fh7eNPtEimQYZkH0s%3D"
+source = r"https://simenstorageaccount.blob.core.windows.net/taxireceipts-training?st=2019-09-14T15%3A12%3A21Z&se=2019-09-15T15%3A12%3A21Z&sp=rl&sv=2018-03-28&sr=c&sig=QjOTS8NOxc961RZjD0%2FI%2F5zuHDUg5NxZdWc5L5iPJl0%3D"
 headers = {
     # Request headers
     'Content-Type': 'image/jpeg',
